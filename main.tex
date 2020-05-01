@@ -1,13 +1,13 @@
 \documentclass[
-	12pt,
-	openright,
-	oneside,
-	a4paper,
-	chapter=TITLE,
-	english,
-	brazil,
-	table
-	]{abntex2}
+12pt,
+openright,
+oneside,
+a4paper,
+chapter=TITLE,
+english,
+brazil,
+table
+]{abntex2}
 
 \usepackage{cmap}				% Mapear caracteres especiais no PDF
 \usepackage[utf8]{inputenc} 			% utf8 definition
@@ -45,11 +45,11 @@
 \renewcommand*{\backrefalt}[4]{
 	\ifcase #1
 		Nenhuma citação no texto.
-	\or
+		\or
 		Citado na página #2.
 	\else
 		Citado #1 vezes nas páginas #2.
-	\fi}
+\fi}
 
 \providecommand\imprimircurso{\erro\curso}
 \newcommand*\curso[1]{\renewcommand{\imprimircurso}{#1}}
